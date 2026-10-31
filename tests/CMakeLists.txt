@@ -27,7 +27,7 @@ target_sources(a3-desk-tests PRIVATE
     ${A3DESK_LIBRARY_SOURCES})
 target_include_directories(a3-desk-tests PRIVATE "${PROJECT_SOURCE_DIR}/Source" "${CMAKE_CURRENT_SOURCE_DIR}")
 target_compile_definitions(a3-desk-tests PRIVATE ${A3DESK_DEFINITIONS}
-    A3DESK_FIXTURES="${PROJECT_SOURCE_DIR}/../software/tests/fixtures")
+    A3DESK_FIXTURES="${CMAKE_CURRENT_SOURCE_DIR}/fixtures")
 target_compile_options(a3-desk-tests PRIVATE -Werror=switch)
 target_link_libraries(a3-desk-tests
     PRIVATE ${A3DESK_JUCE_MODULES} GTest::gtest

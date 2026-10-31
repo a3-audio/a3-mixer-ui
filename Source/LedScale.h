@@ -7,7 +7,7 @@
 #include <array>
 
 /** The desk's meter scales, a port of a3_mixer_meters.py. The shared fixture
-    (software/tests/fixtures/desk-cases.json) holds the two to each other. */
+    (a3-mixer's software/tests/fixtures/desk-cases.json, copied to tests/fixtures/) holds the two to each other. */
 namespace desk::leds
 {
 inline constexpr int channelLedCount = 8;

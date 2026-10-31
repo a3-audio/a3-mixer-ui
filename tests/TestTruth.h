@@ -41,7 +41,8 @@ inline a3::OscTruth truthWithLive (bool with)
     return a3::parseOscTruth (juce::JSON::toString (data));
 }
 
-// The cases software/tests/fixtures/make_desk_cases.py writes from the Python desk.
+// The cases a3-mixer's software/tests/fixtures/make_desk_cases.py writes from the Python desk; fixtures/desk-cases.json
+// is a copy of that file, held to a3-mixer's by a3-mixer's test_desk_cases.py.
 inline const juce::var& fixture()
 {
     static const juce::var cases = juce::JSON::parse (
